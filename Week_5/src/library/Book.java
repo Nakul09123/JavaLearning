@@ -13,13 +13,10 @@ public class Book {
         this.copies = copies;
     }
 
-    // Getters
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
     public String getGenre() { return genre; }
-    public int getCopies() { return copies; }
 
-    // Borrow book
     public boolean borrowBook() {
         if (copies > 0) {
             copies--;
@@ -28,12 +25,10 @@ public class Book {
         return false;
     }
 
-    // Return book
     public void returnBook() {
         copies++;
     }
 
-    // Display book
     public void display() {
         System.out.println("Title: " + title + " | Author: " + author + " | Genre: " + genre + " | Copies: " + copies);
     }
